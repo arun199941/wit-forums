@@ -1,0 +1,24 @@
+
+.container{
+    border-radius: 6px;
+
+}
+.jumbotron{
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 2px #F0E2EC;
+
+}
+textarea{
+    resize:none !important;
+    height: 220px !important;
+}
+.media-body{
+    border-radius: 6px;
+    box-shadow: 2px 2px #F0E2EC;
+    width: 100% !important;
+
+
+}
+.jumbotron{
+    width: 80%;
+}
