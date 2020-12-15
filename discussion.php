@@ -19,10 +19,7 @@
                     $data = $result->fetch_assoc();
                     if ($data) {
                         echo('
-                        <div>
                         
-                        
-                        </div>
                         <div class="jumbotron m-3">
                             <h1 class="display-4">' .$data['title']. '</h1>
                             <p class="lead">' .$data['content'].'</p>
