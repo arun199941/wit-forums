@@ -1,9 +1,9 @@
 <?php
 
 $host = "localhost";
-$user = "root";
+$user = "";
 $password = '';
-$db_name = "wit-forum";
+$db_name = "";
 
 $conn = mysqli_connect($host,$user,$password,$db_name);
 
