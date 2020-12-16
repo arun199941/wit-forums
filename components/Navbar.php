@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,12 +41,26 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-      <li class="nav-item">
+      <?php
+      if(isset($_SESSION['userName'])){
+        echo (' 
+        <li class="nav-item">
+        <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#loginModal">Logout</button>
+      </li>');
+      }else{
+        echo('
+        <li class="nav-item">
         <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#loginModal">Login</button>
       </li>
       <li class="nav-item ml-2">
         <button class="btn btn-outline-success" href="#"  type="button" data-toggle="modal" data-target="#registerModal">Register</button>
       </li>
+        ');
+      }
+
+
+      ?>
+ 
     </ul>
     <form class="form-inline my-2 my-lg-0" action="search.php" method="GET">
       <input class="form-control mr-sm-2" type="search" name="query" placeholder="Search" aria-label="Search">

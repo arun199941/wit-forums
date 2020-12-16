@@ -1,4 +1,5 @@
 <?php
+
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
    $id =$_POST['id'];
    $comment = $_POST['comment'];
@@ -17,12 +18,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
 ?>
-
-<form action="" method="POST">
+<?php 
+if (isset($_SESSION['userName'])) {
+  echo('
+  <form action="" method="POST">
 <div class="container">
     <div class="row">
 
-            <input  type="hidden" value="<?php echo $id ?>" name="id" />
+            <input  type="hidden" value="' . $id .'" name="id" />
             <div class="col-lg-10">
                 <textarea class="form-control" required name="comment" id="comment" ></textarea>
                 <br />
@@ -33,3 +36,23 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     </div>
 </div>
 </form>
+  
+  
+  ');
+
+}else{
+    echo('
+    <div class="container my-2">
+    <div class="row justify-content-center>
+     <h6 class="text text-warning>Login to Comment</h6>
+    
+    </div>
+    
+    
+    </div>
+    
+    ');
+}
+
+
+?>

@@ -2,6 +2,7 @@
 
 
 <!-- Login Modal -->
+<form action="Controllers/LoginController.php" method="POST">
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -23,12 +24,12 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Login</button>
+        <button type="submit" name="submit" class="btn btn-primary">Login</button>
       </div>
     </div>
   </div>
 </div>
-
+</form>
 <!-- Register Modal -->
 <form method="POST" action="Controllers/RegisterController.php">
 <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
