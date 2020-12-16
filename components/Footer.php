@@ -30,7 +30,7 @@
 </div>
 
 <!-- Register Modal -->
-<form method="POST" action="Controllers/LoginController.php">
+<form method="POST" action="Controllers/RegisterController.php">
 <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -59,7 +59,7 @@
 
         </div>
         <div class="form-group">
-            <input  class="form-control" type="password" name="confirmpassword" required placeholder="Confirm Password ...." />
+            <input  class="form-control" type="password" name="confirm_password" required placeholder="Confirm Password ...." />
 
         </div>
       </div>
